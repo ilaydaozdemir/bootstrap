@@ -8,9 +8,36 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
+    <style>
+      [class*="col"] {
+        padding: 1rem;
+        background-color: cadetblue;
+        border: 2px solid #fff;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
+    <div class="container-md border">
+      <div class="row">
+        <div class="col-lg-8 col-md-6">Col 1</div>
+        <div class="col-lg-4 col-md-6">Col 2</div>
+      </div>
+      <div class="row g-0">
+        <div class="col-6">
+          <div class="p-3 border bg-danger">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-danger">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-danger">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-danger">Custom column padding</div>
+        </div>
+      </div>
+    </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <h1>Hello, world!</h1>
   </body>
 </html>
