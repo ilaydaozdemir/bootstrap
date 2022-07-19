@@ -37,6 +37,28 @@ const Cart = () => {
               </span>
             </p>
           </div>
+          <div>
+            <table className="table table-light table-hover m-0">
+              <tbody>
+                {items.map((item, index) => {
+                  return (
+                    <tr key={index}>
+                      <td>
+                        <img
+                          src={item.img}
+                          className="img-cart"
+                          alt={item.title}
+                        />
+                      </td>
+                      <td>{item.title}</td>
+                      <td>${item.price}</td>
+                      <td>Quantity: {item.quantity}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
