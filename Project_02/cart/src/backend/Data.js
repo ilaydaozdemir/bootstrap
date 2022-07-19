@@ -1,4 +1,4 @@
-import img from "./images/1.jpeg";
+import img from "./image/1.jpeg";
 
 const data = {
   products: [
