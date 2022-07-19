@@ -17,6 +17,7 @@ const Home = () => {
                 title={item.title}
                 desc={item.decs}
                 price={item.price}
+                item={item}
                 key={index}
               />
             );
